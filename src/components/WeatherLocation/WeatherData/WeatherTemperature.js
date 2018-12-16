@@ -6,7 +6,7 @@ import { CLOUD,
          SUN,
          RAIN,
          SNOW,
-         WINDY } from '../constants/weathers';
+         WINDY } from './../../../constants/weathers';
 
 const stateToIconName = weatherState => {
     switch (weatherState) {
@@ -38,6 +38,7 @@ const WeatherTemperature = ({ temperature, weatherState }) => (
     </div>
 );
 
+// Under the constructor, set prop-types for the object
 WeatherTemperature.propTypes = {
     temperature: PropTypes.number.isRequired,
     weatherState: PropTypes.string
